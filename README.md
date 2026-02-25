@@ -91,6 +91,24 @@ The manuals in this collection cover every major software tool in this pipeline.
 | **[OriginPro Manual](OriginPro_Manual.md)** | Comprehensive graphing and statistics software. Covers data import, graphing (scatter, bar, box, line, contour, heatmap), curve fitting (exponential dwell times, Gaussian distributions), statistical testing (t-test, Mann-Whitney, Kolmogorov-Smirnov, Cohen's d), and publication-quality figure preparation. OriginPro 2020 was used for all statistical analyses and graphs in Bertaccini et al. (2025). |
 | **[R/RStudio Manual](R_RStudio_Manual.md)** | Statistical computing and visualization with R. Covers data manipulation (dplyr/tidyverse), visualization (ggplot2), statistical testing, and modelling --- applicable to analysing PIEZO1 puncta metrics, comparing conditions, and creating publication figures. |
 
+### Python Scientific Libraries
+
+| Manual | Description |
+|---|---|
+| **[NumPy Manual](NumPy_Manual.md)** | Foundational array computing library for Python. Covers ndarray creation and manipulation, data types for microscopy (uint8/uint16), indexing, slicing, boolean masking, broadcasting, aggregation, linear algebra, Fourier transforms, file I/O, and practical recipes for microscopy image processing. |
+| **[SciPy Manual](SciPy_Manual.md)** | Higher-level scientific computing built on NumPy. Covers signal processing (filtering calcium traces, peak detection), N-dimensional image filtering (scipy.ndimage), statistical tests for biology (t-tests, ANOVA, normality tests), curve fitting and optimisation (exponentials, Gaussians, dose-response), interpolation, and spatial analysis (nearest-neighbour distances, Voronoi tessellation). |
+| **[Pandas Manual](Pandas_Manual.md)** | Data manipulation and analysis with tabular data. Covers Series and DataFrame structures, reading/writing CSV and Excel files, selecting and filtering data, handling missing data, merging and reshaping datasets, GroupBy split-apply-combine aggregation, and time series analysis --- essential for managing tracking results and experimental metadata. |
+| **[matplotlib Manual](matplotlib_Manual.md)** | The standard Python plotting library. Covers the pyplot and object-oriented interfaces, line plots for fluorescence traces, image display, multi-panel figures, scatter plots, bar charts, box plots, histograms, heatmaps and kymographs, colour maps, annotations, scale bars, styling, saving publication-quality figures (PNG, PDF, SVG, EPS), animations, and 3D plots. |
+| **[scikit-image Manual](scikit-image_Manual.md)** | Python library for image processing built on NumPy arrays. Covers filtering and denoising, thresholding (Otsu, adaptive), morphological operations, watershed segmentation, region property measurements, edge detection, feature detection (blob detection), image transforms, registration and alignment, and practical recipes for quantitative microscopy analysis. |
+
+### Development Environments
+
+| Manual | Description |
+|---|---|
+| **[IPython Manual](IPython_Manual.md)** | Enhanced interactive Python shell. Covers tab completion, introspection, input/output history, magic commands (%timeit, %run, %debug), shell integration, timing and profiling, auto-reloading modules, and interactive microscopy data exploration workflows. |
+| **[Jupyter Notebook Manual](Jupyter_Notebook_Manual.md)** | Interactive notebook environment for combining code, documentation, and visualisation. Covers code and Markdown cells, inline plotting with matplotlib, interactive widgets, kernel management, exporting and sharing notebooks, JupyterLab, and best practices for reproducible research documentation. |
+| **[Spyder Manual](Spyder_Manual.md)** | MATLAB-like Python IDE designed for scientific computing. Covers the Editor, IPython Console, Variable Explorer (inspect arrays and DataFrames), Plots pane, visual debugger with breakpoints, code cells, projects, and integration with Conda environments. |
+
 ### Programming Languages
 
 | Manual | Description |
@@ -109,8 +127,10 @@ The manuals in this collection cover every major software tool in this pipeline.
 Start with these manuals in order:
 1. **Command Line Manual** --- foundational terminal skills
 2. **Python Manual** or **MATLAB Manual** --- depending on your programming background
-3. **ImageJ/FIJI Manual** --- the standard imaging tool you will use daily
-4. **FLIKA Manual** --- our lab's primary image processing platform
+3. **NumPy Manual**, **SciPy Manual**, **Pandas Manual**, **matplotlib Manual** --- companion guides to the Python Manual covering the core scientific libraries
+4. **Jupyter Notebook Manual** or **Spyder Manual** --- choose a development environment
+5. **ImageJ/FIJI Manual** --- the standard imaging tool you will use daily
+6. **FLIKA Manual** --- our lab's primary image processing platform
 
 Then proceed to the analysis-specific manuals relevant to your project.
 
