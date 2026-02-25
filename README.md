@@ -25,10 +25,12 @@ PIEZO1 is a mechanically activated ion channel critical to numerous physiologica
 1. **CRISPR engineering** of hiPSCs to express PIEZO1-HaloTag fusion protein at endogenous levels
 2. **Differentiation** into specialized cell types (endothelial cells, keratinocytes, neural stem cells) and tissue organoids (micropatterned neural rosettes)
 3. **Fluorescence labelling** with Janelia Fluor HaloTag ligands (JF646, JF549, JF635, JF646-BAPTA)
-4. **Advanced microscopy** --- TIRF (Total Internal Reflection Fluorescence) at 10--500 fps, confocal microscopy, and adaptive optics lattice light-sheet microscopy (AO-LLSM)
-5. **Single-molecule localization** (ThunderSTORM), **trajectory linking** (FLIKA), and **particle tracking** (u-track)
-6. **Quantitative analysis** of channel localization, mobility (MSD, diffusion coefficients), directional persistence (DiPer), and channel activity (AutoDISC/pyDISC idealization of fluorescence flickering)
-7. **Statistical analysis and publication-quality figure preparation** (OriginPro, R, Python)
+4. **Advanced microscopy** --- TIRF (Total Internal Reflection Fluorescence) at 10--500 fps via Micro-Manager, confocal microscopy, and adaptive optics lattice light-sheet microscopy (AO-LLSM)
+5. **Image restoration** --- content-aware denoising (CARE/CSBDeep) for light-sheet data
+6. **Single-molecule localization** (ThunderSTORM), **trajectory linking** (FLIKA), and **particle tracking** (u-track)
+7. **3D visualisation** --- Imaris and Amira for volumetric rendering, segmentation, and quantification
+8. **Quantitative analysis** of channel localization, mobility (MSD, diffusion coefficients), directional persistence (DiPer), and channel activity (AutoDISC/pyDISC idealization of fluorescence flickering)
+9. **Statistical analysis and publication-quality figure preparation** (OriginPro, R, Python)
 
 The manuals in this collection cover every major software tool in this pipeline.
 
@@ -40,6 +42,7 @@ The manuals in this collection cover every major software tool in this pipeline.
 
 | Manual | Description |
 |---|---|
+| **[Micro-Manager Manual](MicroManager_Manual.md)** | Open-source microscope control and image acquisition software. Covers hardware configuration, multi-dimensional acquisition (time-lapse, Z-stack, multi-channel, multi-position), high-speed acquisition at 200--500 fps, hardware triggering for single-molecule TIRF, the cellTIRF plugin, scripting (Beanshell), and Python integration via Pycro-Manager. Micro-Manager 2.0 with cellTIRF 1.4 was used for all TIRF acquisition in Bertaccini et al. (2025). |
 | **[ImageJ/FIJI Manual](ImageJ_FIJI_Manual.md)** | The standard open-source platform for biological image analysis. Covers Bio-Formats, ROI management, measurements, stack operations, multi-channel imaging, and **ThunderSTORM** for single-molecule localization of PIEZO1-HaloTag puncta in TIRF images. |
 | **[FLIKA Manual](FLIKA_Manual.md)** | Open-source Python-based image processing and analysis platform developed for calcium imaging and single-molecule studies. Used for linking ThunderSTORM localizations into trajectories, extracting fluorescence intensity traces from PIEZO1-HaloTag-BAPTA puncta, and batch processing TIRF movies. |
 | **[Napari Manual](Napari_Manual.md)** | Modern Python-native multi-dimensional image viewer. Covers visualization of TIRF movies, overlay of tracked trajectories, multi-channel rendering, 3D volumetric data from light-sheet microscopy, and integration with segmentation tools. |
@@ -52,6 +55,19 @@ The manuals in this collection cover every major software tool in this pipeline.
 | **[StarDist Manual](StarDist_Manual.md)** | Star-convex polygon-based nucleus segmentation. Covers fluorescent nucleus detection (Hoechst, SPY505-DNA) in hiPSC-derived cells and organoid sections, 3D segmentation, and integration with downstream analysis tools. |
 | **[ilastik Manual](ilastik_Manual.md)** | Interactive machine learning for image classification and segmentation. Covers pixel classification for membrane segmentation, object classification, density counting, semi-automatic tracking, and batch/headless processing for high-throughput TIRF analysis. |
 | **[CellProfiler Manual](CellProfiler_Manual.md)** | Automated image analysis pipeline builder. Covers illumination correction, feature enhancement for PIEZO1 puncta, object identification and filtering, tracking, texture analysis, and complete measurement workflows. |
+
+### 3D Visualisation and Analysis
+
+| Manual | Description |
+|---|---|
+| **[Imaris Manual](Imaris_Manual.md)** | Commercial 3D/4D microscopy visualisation and analysis software (Oxford Instruments). Covers volume rendering, Spots detection for PIEZO1 puncta in confocal z-stacks, Surface segmentation for cells, Filament tracing for neurons and vasculature, tracking, distance measurements, colocalization, AI segmentation (v10.1+), and batch Workflows (v11). Imaris x64 10.0.0 was used for 3D rendering in Bertaccini et al. (2025). |
+| **[Amira Manual](Amira_Manual.md)** | Commercial 3D visualisation, segmentation, and analysis platform (Thermo Fisher Scientific). Covers volume rendering, the Segmentation+ workroom with AI-driven deep learning tools, classic segmentation editor, filament tracing, label analysis with 200+ measurements, automated recipe workflows, and Cellpose integration. Amira 3D 2021.1 was used alongside Imaris for volumetric analysis in Bertaccini et al. (2025). |
+
+### Image Restoration
+
+| Manual | Description |
+|---|---|
+| **[CARE/CSBDeep Manual](CARE_CSBDeep_Manual.md)** | Content-aware image restoration using deep learning. Covers training data acquisition (matched image pairs), patch generation, CARE model training and prediction via the CSBDeep Python package (Keras/TensorFlow), denoising, isotropic resolution recovery, the FIJI plugin, Noise2Void self-supervised denoising, and application to PIEZO1 light-sheet and TIRF data. CARE was used for denoising light-sheet microscopy data in Bertaccini et al. (2025). |
 
 ### Particle Tracking and Trajectory Analysis
 
@@ -101,11 +117,12 @@ Then proceed to the analysis-specific manuals relevant to your project.
 ### For PIEZO1-HaloTag single-particle tracking
 
 Follow the analysis pipeline:
-1. **ImageJ/FIJI** (ThunderSTORM) --- localize PIEZO1-HaloTag puncta in TIRF images
-2. **FLIKA** --- link localizations into trajectories and extract intensity traces
-3. **DiPer Python** --- analyse trajectory persistence, MSD, speed, diffusion
-4. **AutoDISC/pyDISC** --- idealize fluorescence flickering traces for channel kinetics
-5. **OriginPro** or **R** --- statistical comparisons and publication figures
+1. **Micro-Manager** (cellTIRF) --- acquire TIRF movies of PIEZO1-HaloTag-labelled cells
+2. **ImageJ/FIJI** (ThunderSTORM) --- localize PIEZO1-HaloTag puncta in TIRF images
+3. **FLIKA** --- link localizations into trajectories and extract intensity traces
+4. **DiPer Python** --- analyse trajectory persistence, MSD, speed, diffusion
+5. **AutoDISC/pyDISC** --- idealize fluorescence flickering traces for channel kinetics
+6. **OriginPro** or **R** --- statistical comparisons and publication figures
 
 ### For cell migration analysis
 
@@ -116,11 +133,15 @@ Follow the analysis pipeline:
 
 ### For organoid imaging
 
-1. **ImageJ/FIJI** --- initial image inspection and ThunderSTORM localization
-2. **Cellpose** + **StarDist** --- cell and nucleus segmentation in organoid sections
-3. **ilastik** --- pixel classification for tissue boundary identification
-4. **Napari** --- 3D visualization of light-sheet data
-5. **DiPer Python** (3D autocorrelation) --- analyse 3D puncta trajectories
+1. **Micro-Manager** --- acquire confocal z-stacks or light-sheet volumes
+2. **CARE/CSBDeep** --- denoise light-sheet data for improved SNR at depth
+3. **ImageJ/FIJI** --- initial image inspection and ThunderSTORM localization
+4. **Cellpose** + **StarDist** --- cell and nucleus segmentation in organoid sections
+5. **ilastik** --- pixel classification for tissue boundary identification
+6. **Imaris** --- 3D volume rendering, Spot detection, Surface segmentation, publication figures
+7. **Amira** --- advanced segmentation workflows, AI-driven analysis, mesh generation
+8. **Napari** --- 3D visualization of light-sheet data
+9. **DiPer Python** (3D autocorrelation) --- analyse 3D puncta trajectories
 
 ---
 
@@ -152,11 +173,7 @@ The following manuals and topics are planned for future inclusion:
 - **TrackMate Manual** --- FIJI plugin for automated particle and cell tracking with multiple detection and linking algorithms; widely used alternative to u-track
 - **TrackPy Manual** --- Python-based particle tracking library; integrates naturally with the scientific Python ecosystem and DiPer Python
 - **GraphPad Prism Manual** --- statistical analysis and graphing software popular in biology; alternative to OriginPro for dose-response curves and survival analysis
-- **Imaris Manual** --- 3D/4D visualization and analysis for light-sheet and confocal data; used for volumetric rendering of organoid images
-- **Amira Manual** --- 3D visualization and analysis; used alongside Imaris for volumetric data
 - **Huygens/DeconvolutionLab Manual** --- deconvolution software for improving resolution in fluorescence microscopy images
-- **CARE/CSBDeep Manual** --- content-aware image restoration using deep learning; used for denoising light-sheet microscopy data in Bertaccini et al. (2025)
-- **MicroManager Manual** --- open-source microscope control software used for TIRF and widefield acquisition
 
 ### Planned topic guides
 
