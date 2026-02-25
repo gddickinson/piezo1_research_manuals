@@ -212,9 +212,89 @@ If these manuals are useful in your research, please cite the primary research p
 
 > Bertaccini, G.A., Casanellas, I., Evans, E.L., Nourse, J.L., Dickinson, G.D., *et al.* (2025). Visualizing PIEZO1 localization and activity in hiPSC-derived single cells and organoids with HaloTag technology. *Nature Communications*, 16, 5556. https://doi.org/10.1038/s41467-025-59150-1
 
-For the DiPer analysis method:
+### Software references
+
+Please also cite the software tools you use. The following references are drawn from each manual.
+
+#### Imaging and Microscopy Software
+
+> Edelstein, A., Amodaj, N., Hoover, K., Vale, R. & Stuurman, N. (2010). Computer control of microscopes using µManager. *Current Protocols in Molecular Biology*, Chapter 14, Unit 14.20.
+
+> Schindelin, J., Arganda-Carreras, I., Frise, E., *et al.* (2012). Fiji: an open-source platform for biological-image analysis. *Nature Methods*, 9(7), 676--682.
+
+> Schneider, C.A., Rasband, W.S. & Eliceiri, K.W. (2012). NIH Image to ImageJ: 25 years of image analysis. *Nature Methods*, 9, 671--675.
+
+> Ovesný, M., Křížek, P., Borkovec, J., Švindrych, Z. & Hagen, G.M. (2014). ThunderSTORM: a comprehensive ImageJ plug-in for PALM and STORM data analysis and super-resolution imaging. *Bioinformatics*, 30(16), 2389--2390. https://doi.org/10.1093/bioinformatics/btu202
+
+> Ellefsen, K.L., Bhatt, D., Bhatt, D.K., Wang, Y., Bhatt, J.M., *et al.* (2014). Cell Calcium, 56, 147--156.
+
+> napari contributors (2019). napari: a multi-dimensional image viewer for Python. https://doi.org/10.5281/zenodo.3555620
+
+#### Segmentation and Detection
+
+> Stringer, C., Wang, T., Michaelos, M. & Pachitariu, M. (2021). Cellpose: a generalist algorithm for cellular segmentation. *Nature Methods*, 18(1), 100--106.
+
+> Schmidt, U., Weigert, M., Broaddus, C. & Myers, G. (2018). Cell detection with star-convex polygons. *MICCAI*, 265--273.
+
+> Berg, S., Kutra, D., Kroeger, T., Straehle, C.N., Kausler, B.X., Haubold, C., Schiegg, M., Ales, J., Beier, T., Rudy, M., Eren, K., Cervantes, J.I., Xu, B., Beuttenmueller, F., Wolny, A., Zhang, C., Kreshuk, A. & Hamprecht, F.A. (2019). ilastik: interactive machine learning for (bio)image analysis. *Nature Methods*, 16, 1226--1232. https://doi.org/10.1038/s41592-019-0582-9
+
+> Stirling, D.R., Swain-Bowden, M.J., Lucas, A.M., Carpenter, A.E., Cimini, B.A. & Goodman, A. (2021). CellProfiler 4: improvements in speed, utility and usability. *BMC Bioinformatics*, 22, 433.
+
+#### 3D Visualisation and Analysis
+
+> Imaris [version] (Bitplane/Oxford Instruments). https://imaris.oxinst.com
+
+> Amira 3D [version] (Thermo Fisher Scientific). https://www.thermofisher.com/amira
+
+#### Image Restoration
+
+> Weigert, M., Schmidt, U., Boothe, T., Müller, A., Dibrov, A., Jain, A., Wilhelm, B., Schmidt, D., Broaddus, C., Culley, S., Rocha-Martins, M., Segovia-Miranda, F., Norden, C., Henriques, R., Zerial, M., Solimena, M., Rink, J., Tomancak, P., Royer, L., Jug, F. & Myers, E.W. (2018). Content-aware image restoration: pushing the limits of fluorescence microscopy. *Nature Methods*, 15(12), 1090--1097.
+
+#### Particle Tracking and Trajectory Analysis
+
+> Jaqaman, K., Loerke, D., Mettlen, M., *et al.* (2008). Robust single-particle tracking in live-cell time-lapse sequences. *Nature Methods*, 5, 695--702. https://doi.org/10.1038/nmeth.1237
 
 > Gorelik, R. & Gautreau, A. (2014). Quantitative and unbiased analysis of directional persistence in cell migration. *Nature Protocols*, 9(8), 1931--1943. https://doi.org/10.1038/nprot.2014.131
+
+#### Channel Activity Analysis
+
+> White, D.S., Goldschen-Ohm, M.P., Goldsmith, R.H. & Chanda, B. (2020). Top-down machine learning approach for high-throughput single-molecule analysis. *eLife*, 9, e53357. https://doi.org/10.7554/eLife.53357
+
+> Bandyopadhyay, A. & Goldschen-Ohm, M.P. (2021). Unsupervised selection of optimal single-molecule time series idealization criterion. *Biophysical Journal*, 120(20), 4472--4483. https://doi.org/10.1016/j.bpj.2021.08.045
+
+#### Statistics and Visualisation
+
+> OriginPro [version]. OriginLab Corporation, Northampton, MA. https://www.originlab.com
+
+> R Core Team (2025). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
+
+#### Python Scientific Libraries
+
+> Harris, C.R., Millman, K.J., van der Walt, S.J., *et al.* (2020). Array programming with NumPy. *Nature*, 585, 357--362. https://doi.org/10.1038/s41586-020-2649-2
+
+> Virtanen, P., Gommers, R., Oliphant, T.E., *et al.* (2020). SciPy 1.0: fundamental algorithms for scientific computing in Python. *Nature Methods*, 17, 261--272. https://doi.org/10.1038/s41592-019-0686-2
+
+> McKinney, W. (2010). Data Structures for Statistical Computing in Python. *Proceedings of the 9th Python in Science Conference*, 56--61.
+
+> Hunter, J.D. (2007). Matplotlib: A 2D Graphics Environment. *Computing in Science & Engineering*, 9(3), 90--95. https://doi.org/10.1109/MCSE.2007.55
+
+> van der Walt, S., Schönberger, J.L., Nunez-Iglesias, J., Boulogne, F., Warner, J.D., Yager, N., Gouillart, E., Yu, T. & the scikit-image contributors (2014). scikit-image: image processing in Python. *PeerJ*, 2, e453. https://doi.org/10.7717/peerj.453
+
+#### Development Environments
+
+> Pérez, F. & Granger, B.E. (2007). IPython: A System for Interactive Scientific Computing. *Computing in Science & Engineering*, 9(3), 21--29. https://doi.org/10.1109/MCSE.2007.53
+
+> Kluyver, T., Ragan-Kelley, B., Pérez, F., Granger, B., Bussonnier, M., Frederic, J., Kelley, K., Hamrick, J., Grout, J., Corlay, S., Ivanov, P., Avila, D., Abdalla, S. & Willing, C. (2016). Jupyter Notebooks --- a publishing format for reproducible computational workflows. *Positioning and Power in Academic Publishing: Players, Agents and Agendas* (ELPUB), 87--90.
+
+> Spyder IDE. The Spyder Project Contributors. https://www.spyder-ide.org
+
+#### Programming Languages
+
+> MATLAB [version]. The MathWorks Inc., Natick, Massachusetts. https://www.mathworks.com
+
+> Van Rossum, G. & Drake, F.L. (2009). *Python 3 Reference Manual*. CreateSpace, Scotts Valley, CA.
+
+> Arnold, K., Gosling, J. & Holmes, D. (2005). *The Java Programming Language* (4th ed.). Addison-Wesley Professional.
 
 ---
 
