@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "piezo1_research_manuals"
+abstract: "A collection of manuals for the software tools used in mechanosensitive ion channel research, single-molecule imaging, and cell biology"
+authors:
+  - family-names: Dickinson
+    given-names: "George D."
+    orcid: https://orcid.org/0000-0001-7711-0388
+    affiliation: University of California, Irvine
+repository-code: "https://github.com/gddickinson/piezo1_research_manuals"
+url: "https://github.com/gddickinson/piezo1_research_manuals"
+license: CC-BY-4.0
+date-released: 2026-02-25
+preferred-citation:
+  type: article
+  title: "Visualizing PIEZO1 localization and activity in hiPSC-derived single cells and organoids with HaloTag technology"
+  authors:
+    - family-names: Bertaccini
+      given-names: "Gabriella A."
+    - family-names: Casanellas
+      given-names: "Ignasi"
+    - family-names: Evans
+      given-names: "Elizabeth L."
+    - family-names: Nourse
+      given-names: "Jamison L."
+    - family-names: Dickinson
+      given-names: "George D."
+    - family-names: Pathak
+      given-names: "Medha M."
+  journal: "Nature Communications"
+  volume: 16
+  start: 5556
+  year: 2025
+  doi: 10.1038/s41467-025-59150-1
