@@ -206,6 +206,28 @@ The following manuals and topics are planned for future inclusion:
 
 ---
 
+## Web Interface
+
+The manuals can be read as a website with a sidebar of all manuals, working tables of contents, syntax-coloured code
+examples and full-text search across every manual: **https://gddickinson.github.io/piezo1_research_manuals/**
+
+| Home | A manual | Search |
+|---|---|---|
+| ![Home page](docs/img/home.png) | ![FLIKA manual, Filters section](docs/img/manual_flika.png) | ![Search results for "MSD diffusion"](docs/img/search.png) |
+
+Run it locally (Python 3.10+):
+
+```bash
+pip install -r requirements-web.txt
+python run_web.py            # http://127.0.0.1:8253
+```
+
+`scripts/build_static.py` builds the static copy that `.github/workflows/pages.yml` publishes on every push to main;
+`python -m pytest tests` checks the site, and `web/static/search_engine.test.mjs` (Node) checks that every in-page link
+in the manuals reaches a heading. See `INTERFACE.md` for the file map.
+
+---
+
 ## Citation
 
 If these manuals are useful in your research, please cite the primary research paper:
