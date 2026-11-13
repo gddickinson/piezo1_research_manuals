@@ -226,7 +226,7 @@ Please also cite the software tools you use. The following references are drawn 
 
 > Ovesný, M., Křížek, P., Borkovec, J., Švindrych, Z. & Hagen, G.M. (2014). ThunderSTORM: a comprehensive ImageJ plug-in for PALM and STORM data analysis and super-resolution imaging. *Bioinformatics*, 30(16), 2389--2390. https://doi.org/10.1093/bioinformatics/btu202
 
-> Ellefsen, K.L., Bhatt, D., Bhatt, D.K., Wang, Y., Bhatt, J.M., *et al.* (2014). Cell Calcium, 56, 147--156.
+> Ellefsen, K.L., Settle, B., Parker, I. & Smith, I.F. (2014). An algorithm for automated detection, localization and measurement of local calcium signals from camera-based imaging. *Cell Calcium*, 56, 147--156. https://doi.org/10.1016/j.ceca.2014.06.003
 
 > napari contributors (2019). napari: a multi-dimensional image viewer for Python. https://doi.org/10.5281/zenodo.3555620
 

@@ -83,7 +83,7 @@ FLIKA is written entirely in Python, built on PyQt (for the graphical interface)
 
 If you use FLIKA in published research, cite:
 
-> Ellefsen KL, Bhatt D, Bhatt DK, Wang Y, Bhatt JM, et al. (2014) Cell Calcium 56:147-156.
+> Ellefsen KL, Settle B, Parker I, Smith IF (2014) An algorithm for automated detection, localization and measurement of local calcium signals from camera-based imaging. Cell Calcium 56:147-156. https://doi.org/10.1016/j.ceca.2014.06.003
 
 FLIKA (version 4.8.1) was used in Bertaccini et al. (2025) *Nature Communications* for two critical analysis tasks in a PIEZO1-HaloTag single-molecule imaging study: (1) linking ThunderSTORM localizations into single-particle trajectories for PIEZO1 puncta diffusion analysis, and (2) recording puncta fluorescence intensity traces from JF646-BAPTA-labelled PIEZO1-HaloTag cells to report channel gating via fluorescence flickering.
 
