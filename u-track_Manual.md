@@ -53,7 +53,7 @@ George Dickinson | george.dickinson@gmail.com
 
 19. [plotTracks2D](#19-plottracks2d)
 20. [overlayFeaturesMovie](#20-overlayfeaturesmovie)
-21. [overlayTracksMovieNew](#21-overlaytracksmoviewew)
+21. [overlayTracksMovieNew](#21-overlaytracksmovienew)
 22. [plotCompTrack](#22-plotcomptrack)
 
 **Part IX: Command Line Scripting**

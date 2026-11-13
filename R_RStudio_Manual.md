@@ -48,10 +48,8 @@ George Dickinson | george.dickinson@gmail.com
 
 21. [Descriptive Statistics and Exploratory Analysis](#21-descriptive-statistics-and-exploratory-analysis)
 22. [t-Tests and Paired Comparisons](#22-t-tests-and-paired-comparisons)
-    - [Research Example: Comparing PIEZO1 Puncta Density Across Conditions](#research-example-comparing-piezo1-puncta-density-across-conditions)
 23. [ANOVA and Post-Hoc Tests](#23-anova-and-post-hoc-tests)
 24. [Non-Parametric Tests](#24-non-parametric-tests)
-    - [Research Example: Distribution Comparisons for Diffusion Data](#research-example-distribution-comparisons-for-diffusion-data)
 25. [Correlation and Linear Regression](#25-correlation-and-linear-regression)
 26. [Nonlinear Curve Fitting](#26-nonlinear-curve-fitting)
 27. [Mixed-Effects Models](#27-mixed-effects-models)
@@ -75,7 +73,6 @@ George Dickinson | george.dickinson@gmail.com
 
 37. [R Markdown and Quarto](#37-r-markdown-and-quarto)
 38. [R Projects and Version Control](#38-r-projects-and-version-control)
-    - [Research Example: Single-Molecule Imaging Analysis Project](#research-example-single-molecule-imaging-analysis-project)
 
 **Appendices**
 
